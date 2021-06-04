@@ -24,7 +24,7 @@ class CreateOrdersTable extends Migration
             $table->string('promo')->nullable();
             $table->enum('status', [
                 'processing', 'shipped',
-                'delivered','canceled'
+                'delivered','canceled', 'pending'
             ]);
             $table->date('order_date');
             $table->timestamps();
