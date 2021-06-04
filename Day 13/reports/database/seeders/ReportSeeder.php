@@ -35,7 +35,7 @@ class ReportSeeder extends Seeder
             $category = ['toys', 'books', 'home supplies', 'accessories',
                 'gadgets','food','appliances'];
             
-            $status = ['processing', 'shipped', 'delivered','canceled'];
+            $status = ['processing', 'shipped', 'delivered','canceled', 'pending'];
 
             $order = Order::create([
                 'customers_id'=> $customer->id,
